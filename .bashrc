@@ -1,3 +1,6 @@
+# NOTE: just default .bashrc
+# ksh > bash
+
 # Sample .bashrc for SUSE Linux
 # Copyright (c) SUSE Software Solutions Germany GmbH
 
