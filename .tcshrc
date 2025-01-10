@@ -1,0 +1,8 @@
+set prompt = "%n@%m: < %~ > % "
+
+
+alias l  "ls -l --color"
+alias la "ls -la --color"
+alias ls "ls --color"
+
+alias gnuplot "gnuplot -p"
