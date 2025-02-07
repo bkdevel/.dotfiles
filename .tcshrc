@@ -1,8 +1,15 @@
-cowsay -f stegosaurus "Willkomen, $USER in der tcsh auf `lsb_release -d | cut -f2-`"
+cowsay -f stegosaurus "Willkomen, $USER, in der tcsh auf `lsb_release -d | cut -f2-`"
+fortune
 
 
-## set environment vars
+## tcsh propmpt
 set prompt = "%n@%m: < %~ > % "
+
+## environment vars
+setenv EDITOR vim
+setenv VISUAL vim
+setenv PAGER  less
+setenv SHELL  tcsh
 
 
 #
@@ -11,8 +18,10 @@ set prompt = "%n@%m: < %~ > % "
 
 alias l  "ls -l --color"
 alias la "ls -la --color"
+alias al "ls -la --color"
 alias ls "ls --color"
 
+alias sysfetch "fastfetch"
 alias fetch "fastfetch"
 
 alias gnuplot "gnuplot -p"
