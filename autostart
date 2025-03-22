@@ -20,7 +20,6 @@ Mod=Mod4   # Use the super key as the main modifier
 
 TERMINAL="kitty"
 MENU="rofi -show run"
-SCREENSHOT="spectacle"
 
 hc keybind $Mod-Shift-q quit
 hc keybind $Mod-Shift-r reload
