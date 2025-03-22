@@ -18,13 +18,15 @@ hc keyunbind --all
 #Mod=Mod1     Use alt as the main modifier
 Mod=Mod4   # Use the super key as the main modifier
 
-# terminal is konsole
-TERMINAL="konsole"
+TERMINAL="kitty"
+MENU="rofi -show run"
+SCREENSHOT="spectacle"
 
 hc keybind $Mod-Shift-q quit
 hc keybind $Mod-Shift-r reload
 hc keybind $Mod-Shift-c close
 hc keybind $Mod-Return spawn "${TERMINAL:-xterm}" # use your $TERMINAL with xterm as fallback
+hc keybind $Mod-d spawn $MENU
 
 # basic movement in tiling and floating mode
 # focusing clients
@@ -186,8 +188,10 @@ hc unlock
 # or simply:
 # hc detect_monitors
 
-feh --bg-scale ~/Bilder/wallpapers/Huwp4668334.jpeg	# wallpaper
+# feh --bg-scale ~/Bilder/wallpapers/Huwp4668334.jpeg	
+feh --bg-scale ~/Bilder/wallpapers/A.jpeg	# wallpaper
 
+picom &							# start picom
 polybar &						# start poly bar
 
 # find the panel
