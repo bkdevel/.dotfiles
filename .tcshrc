@@ -1,5 +1,9 @@
+.tcshrc:
 cowsay -f stegosaurus "Willkomen, $USER, in der tcsh auf `lsb_release -d | cut -f2-`"
 fortune
+
+
+eval `starship init tcsh`
 
 
 ## tcsh propmpt
@@ -20,8 +24,18 @@ alias l  "ls -l --color"
 alias la "ls -la --color"
 alias al "ls -la --color"
 alias ls "ls --color"
+alias sl "ls --color"
+
+alias e2l  "e2ls -l"
+alias e2la "e2ls -la"
 
 alias sysfetch "fastfetch"
 alias fetch "fastfetch"
 
 alias gnuplot "gnuplot -p"
+
+alias menu "rofi -show run"
+alias m "rofi -show run"
+alias run "rofi -show run"
+
+alias power "upower -i /org/freedesktop/UPower/devices/battery_BAT0"
