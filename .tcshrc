@@ -1,4 +1,3 @@
-.tcshrc:
 cowsay -f stegosaurus "Willkomen, $USER, in der tcsh auf `lsb_release -d | cut -f2-`"
 fortune
 
