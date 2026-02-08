@@ -8,7 +8,7 @@ set prompt = "%n@%m: < %~ > % "
 ## environment vars
 setenv EDITOR vim
 setenv VISUAL vim
-setenv PAGER  bat
+setenv PAGER  less
 setenv SHELL  tcsh
 
 
